@@ -1,20 +1,2 @@
-#foo{:data => {:role => "page"}}
-  %div{:data => {:role => "header"}}
-    %h1 Foo
-  %div{:data => {:role => "content"}}
-    %p
-      First page is the one shown.
-      %a{:href => "#bar"} Go to bar
-  %div{:data => {:role => "footer"}}
-    %h4 Page Footer
-
-#bar{:data => {:role => "page"}}
-  %div{:data => {:role => "header"}}
-    %h1 Bar
-  %div{:data => {:role => "content"}}
-    %p
-      But this is another page
-      %a{:href => "#foo"} Back to foo
-  %div{:data => {:role => "footer"}}
-    %h4 Page Footer
-
+= render "foo"
+= render "bar"
