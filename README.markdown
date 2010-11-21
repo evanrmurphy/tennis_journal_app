@@ -1,3 +1,3 @@
-# jQuery Mobile App
+# Tennis Journal App
 
-Trying out jQuery Mobile.
+A personal tennis journal created using jQuery Mobile.
