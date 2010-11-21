@@ -1,0 +1,11 @@
+!!! 5
+%html
+  %head
+    %title jQuery Mobile App
+    %link{:rel => "stylesheet", :href => "http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css"} 
+    = javascript_include_tag "http://code.jquery.com/jquery-1.4.min.js"
+    = javascript_include_tag "http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"
+    = csrf_meta_tag
+  %body
+    = yield
+    = javascript_include_tag "application.js"
