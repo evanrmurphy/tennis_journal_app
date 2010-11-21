@@ -10,15 +10,21 @@
         %label{:for => "opponent-name"} Who did you play against?
         %input#opponent-name{:type => "text", :name => "opponent-name"}
   
+      -# %div{:data => {:role => "fieldcontain"}}
+      -#   %fieldset{:data => {:role => "controlgroup"}}
+      -#     %legend Did you win or lose the match?
+      -# 
+      -#     %input#radio-choice-1{:type => "radio", :name => "radio-choice-1", :value => "won"}
+      -#     %label{:for => "radio-choice-1"} Won
+      -# 
+      -#     %input#radio-choice-2{:type => "radio", :name => "radio-choice-2", :value => "lost"}
+      -#     %label{:for => "radio-choice-2"} Lost
+
       %div{:data => {:role => "fieldcontain"}}
-        %fieldset{:data => {:role => "controlgroup"}}
-          %legend Did you win or lose the match?
-
-          %input#radio-choice-1{:type => "radio", :name => "radio-choice-1", :value => "won"}
-          %label{:for => "radio-choice-1"} Won
-
-          %input#radio-choice-2{:type => "radio", :name => "radio-choice-2", :value => "lost"}
-          %label{:for => "radio-choice-2"} Lost
+        %label{:for => "slider"} Did you win or lose the match?
+        %select#slider{:data => {:role => "slider"}}
+          %option{:value => "won"} Won
+          %option{:value => "lost"} Lost
 
       %div{:data => {:role => "fieldcontain"}}
         %label{:for => "notes"} Notes:
