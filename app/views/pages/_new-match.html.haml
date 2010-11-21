@@ -5,23 +5,27 @@
 
   %div{:data => {:role => "content"}}
 
-    %div{:data => {:role => "fieldcontain"}}
-      %label{:for => "opponent-name"} Who did you play against?
-      %input#opponent-name{:type => "text", :name => "opponent-name"}
+    %form{:action => "#", :method => "post"}
+      %div{:data => {:role => "fieldcontain"}}
+        %label{:for => "opponent-name"} Who did you play against?
+        %input#opponent-name{:type => "text", :name => "opponent-name"}
+  
+      %div{:data => {:role => "fieldcontain"}}
+        %fieldset{:data => {:role => "controlgroup"}}
+          %legend Did you win or lose the match?
 
-    %div{:data => {:role => "fieldcontain"}}
-      %fieldset{:data => {:role => "controlgroup"}}
-        %legend Did you win or lose the match?
+          %input#radio-choice-1{:type => "radio", :name => "radio-choice-1", :value => "won"}
+          %label{:for => "radio-choice-1"} Won
 
-        %input#radio-choice-1{:type => "radio", :name => "radio-choice-1"}
-        %label{:for => "radio-choice-1"} Won
+          %input#radio-choice-2{:type => "radio", :name => "radio-choice-2", :value => "lost"}
+          %label{:for => "radio-choice-2"} Lost
 
-        %input#radio-choice-2{:type => "radio", :name => "radio-choice-2"}
-        %label{:for => "radio-choice-2"} Lost
+      %div{:data => {:role => "fieldcontain"}}
+        %label{:for => "notes"} Notes:
+        %textarea#notes{:type => "text", :name => "notes"}
 
-    %div{:data => {:role => "fieldcontain"}}
-      %label{:for => "notes"} Notes:
-      %textarea#notes{:type => "text", :name => "notes"}
+      %div{:data => {:role => "fieldcontain"}}
+        %button{:type => "submit"} Submit
     
   %div{:data => {:role => "footer"}}
 
