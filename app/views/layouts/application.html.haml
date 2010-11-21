@@ -3,7 +3,8 @@
   %head
     %title jQuery Mobile App
     %link{:rel => "stylesheet", :href => "http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.css"} 
-    = javascript_include_tag "http://code.jquery.com/jquery-1.4.min.js"
+    -# "jquery-1.4" breaks jQuery mobile!
+    = javascript_include_tag "http://code.jquery.com/jquery-1.4.4.min.js"
     = javascript_include_tag "http://code.jquery.com/mobile/1.0a2/jquery.mobile-1.0a2.min.js"
     = csrf_meta_tag
   %body
